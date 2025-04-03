@@ -153,6 +153,31 @@
         }
     }
 </style>
+
+<style>
+    .responsive-logo {
+        width: auto;
+        height: auto;
+        max-width: 15%; /* Adjust size relative to the container */
+        max-height: 80px; /* Prevents it from becoming too large */
+    }
+
+    /* For smaller screens */
+    @media (max-width: 768px) {
+        .responsive-logo {
+            max-width: 30%; /* Increase size on smaller screens */
+            max-height: 60px;
+        }
+    }
+
+    /* For very small screens */
+    @media (max-width: 480px) {
+        .responsive-logo {
+            max-width: 40%; /* Larger size for better visibility */
+            max-height: 50px;
+        }
+    }
+</style>
 <!-- Toggle Button -->
 <button onclick="toggleSidebar()" style="position: fixed; top: 90px; left:20px; background: linear-gradient(145deg, #262626, #1a1a1a); color: #40ff00; border: 2px solid #40ff00; padding: 10px 15px; cursor: pointer; z-index: 998; border-radius: 5px; font-size: 14px; font-weight: bold; box-shadow: 3px 3px 8px rgba(0, 255, 0, 0.3);">☰ Menu</button>
 
