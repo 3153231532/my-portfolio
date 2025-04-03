@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Declaration by Adoko Chrispus">
+    <meta name="keywords" content="Adoko Chrispus, Declaration, Authenticity">
+    <meta name="author" content="Adoko Chrispus">
+    <title>Declaration - Adoko Chrispus</title>
+</head>
+<body style="font-family: 'Times New Roman', Times, serif, sans-serif; overflow-x: hidden;  /* Prevent horizontal overflow */margin: 0;padding: 0; background-color: #f4f4f4; padding-top: 70px; padding-bottom: 70px;">
+   <!-- Hero Section for Declaration -->
+<section style="width: 100%; padding-top: 80px; height: 100vh; background: linear-gradient(145deg, #121d2b, #1a293a); color: white; display: flex; align-items: center; justify-content: center; text-align: center; padding: 50px; position: relative; overflow: hidden; box-shadow: 0 10px 20px rgba(0, 200, 255, 0.2); box-sizing: border-box; padding-bottom: 80px;">
+     
+    <!-- Background Image -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; overflow: hidden;">
+        <img src="declaration_bg.jpg" alt="Professional Background" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2;">
+    </div>
+
+    <!-- Hero Content -->
+    <div style="max-width: 700px; z-index: 2; text-align: center;">
+        
+        <!-- Profile Image -->
+        <img src="chris 2.jpg" alt="Adoko Chrispus" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #00c8ff; margin-bottom: 20px; margin-top: 80px;">
+
+        <h1 style="font-size: 42px; font-weight: bold; color: #00c8ff; text-transform: uppercase; margin-bottom: 10px;">
+            Declaration Statement
+        </h1>
+
+        <p style="font-size: 20px; color: #d0e3f0; margin-bottom: 25px; line-height: 1.6;">
+            I, <b>Adoko Chrispus</b>, hereby affirm that the information provided in this portfolio is true and accurate to the best of my knowledge and belief.
+        </p>
+
+        <!-- Signature Section -->
+        <div style="margin-top: 30px;">
+            <img src="chris signature.png" alt="Signature" style="width: 200px; height: auto; margin-bottom: 10px;">
+            <p style="font-size: 18px; color: #00c8ff; font-weight: bold;">Adoko Chrispus</p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+            <a href="contact.html" style="background: #00c8ff; color: #121d2b; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 8px; box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); transition: 0.3s;">
+                <i class="fas fa-envelope"></i> Contact Me
+            </a>
+            <a href="index.html" style="background: transparent; color: #00c8ff; border: 2px solid #00c8ff; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 8px; transition: 0.3s;">
+                <i class="fas fa-briefcase"></i> View My Portfolio
+            </a>
+        </div>
+    </div>
+    
+</section>
+  
+  <!-- Image Slideshow JavaScript -->
+  <script>
+      let currentIndex = 0;
+      const images = document.querySelectorAll('#bg-slider img');
+      const totalImages = images.length;
+  
+      function changeBackgroundImage() {
+          currentIndex = (currentIndex + 1) % totalImages;
+          document.getElementById('bg-slider').style.transform = `translateX(-${currentIndex * 20}%)`;
+      }
+  
+      setInterval(changeBackgroundImage, 4000);
+  </script>
+  
+      
+      <!-- Mobile Responsiveness -->
+      <style>
+          @media screen and (max-width: 1024px) {
+              section {
+                  height: auto !important;
+                  padding: 40px 20px !important;
+              }
+      
+              div {
+                  max-width: 100% !important;
+              }
+      
+              section h1 {
+                  font-size: 36px !important;
+              }
+              
+              section p {
+                  font-size: 18px !important;
+              }
+              
+              section a {
+                  padding: 10px 20px !important;
+                  font-size: 14px !important;
+              }
+          }
+      
+          @media screen and (max-width: 768px) {
+              section {
+                  flex-direction: column !important;
+                  text-align: center !important;
+                  height: auto !important;
+                  padding: 40px 15px !important;
+              }
+      
+              /* Ensure images are always visible */
+              section div:first-child {
+                  display: flex !important;
+                  width: 100% !important;
+                  height: 100% !important;
+              }
+      
+              section img {
+                  width: 50% !important;
+                  height: auto !important;
+                  object-fit: cover !important;
+                  opacity: 0.3 !important;
+              }
+      
+              section h1 {
+                  font-size: 28px !important;
+              }
+      
+              section p {
+                  font-size: 16px !important;
+              }
+      
+              section a {
+                  padding: 8px 16px !important;
+                  font-size: 12px !important;
+              }
+          }
+      </style>
+      
+      
+         <!-- Header (Static & Responsive) -->
+      <header style="position: fixed; top: 0; width: 100%; background: linear-gradient(135deg, #002244, #004488, #0066aa); color: white; padding: 5px 15px; z-index: 1000; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-bottom: 3px solid #44ff00; gap: 20px;">
+      
+          <!-- Left Section: Portfolio Title -->
+          <div style="flex: 1; font-size: 16px; font-weight: bold; color: #ffffff; font-family: 'Times New Roman', Times, serif, sans-serif; white-space: nowrap;">
+             ADOKO CHRISPUS <br> 
+              <span style="font-size: 15px;">Professional </span> <br>
+              <span style="font-size: 15px;"> Portfolio </span>
+          </div>
+      
+          <!-- Center Section: Navigation Links -->
+          <nav style="flex: 2; text-align: center; background: rgba(255, 255, 255, 0.1); padding: 8px 0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); backdrop-filter: blur(5px); gap: 10px;">
+              <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 14px;">Home</a>
+              <a href="education.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 14px;">Education</a>
+              <a href="experience.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 14px;">Experience</a>
+              <a href="skills.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 14px;">Skills</a>
+              <a href="projects.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 14px;">Projects</a>
+              <a href="references.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 14px;">References</a>
+          </nav>
+          
+      
+          <!-- Right Section: Profile Image -->
+          <div style="flex: 1; display: flex; justify-content: flex-end; margin-right: 0;">
+              <div style="width: 80px; height: 80px; background: #000000; display: flex; align-items: center; justify-content: center; border: 1px solid white; border-radius: 8px; margin-right: 20px;">
+                  <img src="chris.jpg" alt="Adoko Chrispus" style="width: 70px; height: 70px; border-radius: 6px;">
+              </div>
+          </div>
+      
+      </header>
+      
+      <!-- Mobile Responsiveness -->
+      <style>
+          @media screen and (max-width: 768px) {
+              header {
+                  flex-direction: row;
+                  align-items: center;
+                  padding: 8px;
+              }
+              /* Ensure the Portfolio Title stays visible and resizes */
+              header div:first-child {
+                  font-size: 16px;
+                  flex: 1;
+                  white-space: nowrap;
+                  text-align: left;
+              }
+              /* Center Navigation & Adjust Spacing */
+              nav {
+                  flex: 2;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  padding: 5px 0;
+              }
+              nav a {
+                  margin: 5px 6px;
+                  font-size: 13px;
+              }
+              /* Adjust Image Size */
+              header div:last-child {
+                  flex: 1;
+                  display: flex;
+                  justify-content: flex-end;
+              }
+              header div:last-child div {
+                  width: 60px;
+                  height: 60px;
+              }
+              header div:last-child img {
+                  width: 50px;
+                  height: 50px;
+              }
+          }
+      
+          @media screen and (max-width: 480px) {
+              /* Smaller Font for Portfolio Title */
+              header div:first-child {
+                  font-size: 14px;
+              }
+              /* Reduce Navigation Font & Spacing */
+              nav a {
+                  font-size: 12px;
+                  margin: 3px;
+              }
+              /* Further Reduce Image Size */
+              header div:last-child div {
+                  width: 50px;
+                  height: 50px;
+              }
+              header div:last-child img {
+                  width: 40px;
+                  height: 40px;
+              }
+          }
+      </style>
+      <!-- Toggle Button -->
+      <button onclick="toggleSidebar()" style="position: fixed; top: 90px; left:20px; background: linear-gradient(145deg, #262626, #1a1a1a); color: #40ff00; border: 2px solid #40ff00; padding: 10px 15px; cursor: pointer; z-index: 998; border-radius: 5px; font-size: 14px; font-weight: bold; box-shadow: 3px 3px 8px rgba(0, 255, 0, 0.3);">☰ Menu</button>
+      
+      
+        <!-- Sidebar -->
+      <aside id="sidebar" style="position: fixed; left: -10px; top: -100vh; width: 150px; background: linear-gradient(145deg, #000000, #1a1a1a); color: white; height: 100vh; padding: 20px; box-sizing: border-box; border-right: 5px solid #40ff00; box-shadow: 5px 5px 20px rgba(0, 255, 0, 0.3); border-radius: 0 15px 15px 0; transition: all 0.15s ease-in-out; display: flex; flex-direction: column; justify-content: flex-start; z-index: 990; padding-top: 30px;">
+      
+          <h3 style="border-bottom: 2px solid #40ff00; padding-bottom: 5px; padding-top: 50px; font-size: 15px; text-transform: uppercase; margin-top: 80px; text-align: center;">Quick Links</h3>
+          
+          <a href="certifications.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Certifications</a>
+          
+          <a href="languages.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Languages</a>
+          
+          <a href="hobbies.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Hobbies</a>
+          
+          <a href="declaration.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Declaration</a>
+      
+      </aside>
+      
+      <script>
+          function toggleSidebar() {
+              let sidebar = document.getElementById('sidebar');
+              if (sidebar.style.top === "-100vh") {
+                  sidebar.style.top = "0";
+              } else {
+                  sidebar.style.top = "-100vh";
+              }
+          }
+      
+          // Hide sidebar when clicking outside
+          document.addEventListener('click', function(event) {
+              let sidebar = document.getElementById('sidebar');
+              let button = document.querySelector('button');
+      
+              if (!sidebar.contains(event.target) && !button.contains(event.target)) {
+                  sidebar.style.top = "-100vh";
+              }
+          });
+      
+          // Add hover effects for links
+          document.querySelectorAll('aside a').forEach(link => {
+              link.addEventListener('mouseover', function() {
+                  this.style.border = "2px solid #40ff00";
+                  this.style.color = "#40ff00";
+                  this.style.boxShadow = "3px 3px 10px rgba(0, 255, 0, 0.5)";
+              });
+              link.addEventListener('mouseout', function() {
+                  this.style.border = "2px solid transparent";
+                  this.style.color = "white";
+                  this.style.boxShadow = "none";
+              });
+          });
+      </script>
+      
+      
+      <!-- Mobile Responsiveness -->
+      <style>
+          @media screen and (max-width: 768px) {
+              aside {
+                  width: 100px;
+                  padding: 10px;
+                  border-right: 2px solid #26ff00;
+                  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+              }
+              aside h3 {
+                  font-size: 14px;
+                  margin-top: 100px;
+              }
+              aside a {
+                  font-size: 12px;
+                  margin: 5px 0;
+              }
+          }
+      
+          @media screen and (max-width: 480px) {
+              aside {
+                  width: 80px;
+                  padding: 8px;
+              }
+              aside h3 {
+                  font-size: 12px;
+                  margin-top: 80px;
+              }
+              aside a {
+                  font-size: 10px;
+                  margin: 4px 0;
+              }
+          }
+      </style>
+      
+          <!-- FontAwesome for Icons -->
+ 
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+
+      
+          <!-- Footer -->
+          <footer style="background: linear-gradient(135deg, #002244, #004488, #0066aa); color: white; text-align: center; padding: 20px 0; width: 100%; font-family: 'Times New Roman', Times, serif, sans-serif; border-top: 2px solid #22ff00; position: fixed; bottom: 0; left: 0; z-index: 1000;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px; flex-wrap: nowrap;">
+        
+                <!-- Left Section: Phone Contacts -->
+                <div style="flex: 1; text-align: left; margin-bottom: 10px;">
+                    <p style="font-size: 16px; margin: 0; font-weight: bold;">Call Me Directly</p>
+                    <a href="tel:+256741813093" style="color: #22ff00; text-decoration: none; font-size: 16px;">
+                        <i class="fas fa-phone-alt"></i> 0741813093
+                    </a><br>
+                    <a href="tel:+256772893300" style="color: #22ff00; text-decoration: none; font-size: 16px;">
+                        <i class="fas fa-phone-alt"></i> 0772893300
+                    </a>
+                </div>
+        
+                <!-- Center Section: Copyright Info -->
+                <div style="flex: 1; text-align: center; margin-bottom: 10px;">
+                    <p style="font-size: 16px; margin: 0;">&copy; 2025 Adoko Chrispus | Portfolio</p>
+                    <p style="font-size: 14px; margin: 5px 0 0 0;">All Rights Reserved</p>
+                </div>
+        
+                <!-- Right Section: Social Media Links -->
+                <div style="flex: 1; display: flex; justify-content: flex-end; gap: 15px; margin-bottom: 10px;">
+                    <div style="text-align: right;">
+                        <p style="font-size: 16px; margin: 0; font-weight: bold;">Connect with Me</p>
+                        <a href="https://linkedin.com/in/adoko-chrispus-571672302" target="_blank" style="color: white; font-size: 18px; transition: 0.3s;">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://wa.me/message/XD62H5OTJF3VD1" target="_blank" style="color: white; font-size: 18px; transition: 0.3s;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100084689462077" target="_blank" style="color: white; font-size: 18px; transition: 0.3s;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://github.com/3153231532" target="_blank" style="color: white; font-size: 18px; transition: 0.3s;">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+        
+            </div>
+        </footer>
+        
+        <!-- Prevent content from overlapping the footer -->
+        <style>
+            body {
+                margin-bottom: 100px; /* Ensures content doesn’t get hidden behind the footer */
+            }
+        
+            @media screen and (max-width: 768px) {
+                footer {
+                    padding: 10px 0 !important;
+                    font-size: 14px !important;
+                }
+        
+                footer p {
+                    font-size: 14px !important;
+                }
+        
+                footer a {
+                    font-size: 14px !important;
+                }
+        
+                footer .left-section, footer .center-section, footer .right-section {
+                    flex-basis: 100% !important;
+                    text-align: center !important;
+                }
+        
+                footer .social-media {
+                    margin-top: 10px;
+                }
+            }
+        </style>
+       
+       
+</body>
+</html>
