@@ -125,194 +125,196 @@
            }
        </style>
        
-       
-          <!-- Header (Static & Responsive) -->
-       <header style="position: fixed; top: 0; width: 100%; background: linear-gradient(135deg, #002244, #004488, #0066aa); color: white; padding: 5px 15px; z-index: 1000; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-bottom: 3px solid #44ff00; gap: 20px;">
-       
-           <!-- Left Section: Portfolio Title -->
-           <div style="flex: 1; font-size: 16px; font-weight: bold; color: #ffffff; font-family: 'Times New Roman', Times, serif, sans-serif; white-space: nowrap;">
-              ADOKO CHRISPUS <br> 
-               <span style="font-size: 15px;">Professional </span> <br>
-               <span style="font-size: 15px;"> Portfolio </span>
-           </div>
-       
-           <!-- Center Section: Navigation Links -->
-           <nav style="flex: 2; text-align: center; background: rgba(255, 255, 255, 0.1); padding: 8px 0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); backdrop-filter: blur(5px); gap: 10px;">
-               <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 14px;">Home</a>
-               <a href="education.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 14px;">Education</a>
-               <a href="experience.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 14px;">Experience</a>
-               <a href="skills.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 14px;">Skills</a>
-               <a href="projects.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 14px;">Projects</a>
-               <a href="references.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 14px;">References</a>
-           </nav>
-           
-       
-           <!-- Right Section: Profile Image -->
-           <div style="flex: 1; display: flex; justify-content: flex-end; margin-right: 0;">
-               <div style="width: 80px; height: 80px; background: #000000; display: flex; align-items: center; justify-content: center; border: 1px solid white; border-radius: 8px; margin-right: 20px;">
-                   <img src="chris.jpg" alt="Adoko Chrispus" style="width: 70px; height: 70px; border-radius: 6px;">
-               </div>
-           </div>
-       
-       </header>
-       
-       <!-- Mobile Responsiveness -->
-       <style>
-           @media screen and (max-width: 768px) {
-               header {
-                   flex-direction: row;
-                   align-items: center;
-                   padding: 8px;
-               }
-               /* Ensure the Portfolio Title stays visible and resizes */
-               header div:first-child {
-                   font-size: 16px;
-                   flex: 1;
-                   white-space: nowrap;
-                   text-align: left;
-               }
-               /* Center Navigation & Adjust Spacing */
-               nav {
-                   flex: 2;
-                   display: flex;
-                   flex-wrap: wrap;
-                   justify-content: center;
-                   padding: 5px 0;
-               }
-               nav a {
-                   margin: 5px 6px;
-                   font-size: 13px;
-               }
-               /* Adjust Image Size */
-               header div:last-child {
-                   flex: 1;
-                   display: flex;
-                   justify-content: flex-end;
-               }
-               header div:last-child div {
-                   width: 60px;
-                   height: 60px;
-               }
-               header div:last-child img {
-                   width: 50px;
-                   height: 50px;
-               }
-           }
-       
-           @media screen and (max-width: 480px) {
-               /* Smaller Font for Portfolio Title */
-               header div:first-child {
-                   font-size: 14px;
-               }
-               /* Reduce Navigation Font & Spacing */
-               nav a {
-                   font-size: 12px;
-                   margin: 3px;
-               }
-               /* Further Reduce Image Size */
-               header div:last-child div {
-                   width: 50px;
-                   height: 50px;
-               }
-               header div:last-child img {
-                   width: 40px;
-                   height: 40px;
-               }
-           }
-       </style>
-       <!-- Toggle Button -->
-       <button onclick="toggleSidebar()" style="position: fixed; top: 90px; left:20px; background: linear-gradient(145deg, #262626, #1a1a1a); color: #40ff00; border: 2px solid #40ff00; padding: 10px 15px; cursor: pointer; z-index: 998; border-radius: 5px; font-size: 14px; font-weight: bold; box-shadow: 3px 3px 8px rgba(0, 255, 0, 0.3);">☰ Menu</button>
-       
-       
-         <!-- Sidebar -->
-       <aside id="sidebar" style="position: fixed; left: -10px; top: -100vh; width: 150px; background: linear-gradient(145deg, #000000, #1a1a1a); color: white; height: 100vh; padding: 20px; box-sizing: border-box; border-right: 5px solid #40ff00; box-shadow: 5px 5px 20px rgba(0, 255, 0, 0.3); border-radius: 0 15px 15px 0; transition: all 0.15s ease-in-out; display: flex; flex-direction: column; justify-content: flex-start; z-index: 990; padding-top: 30px;">
-       
-           <h3 style="border-bottom: 2px solid #40ff00; padding-bottom: 5px; padding-top: 50px; font-size: 15px; text-transform: uppercase; margin-top: 80px; text-align: center;">Quick Links</h3>
-           
-           <a href="certifications.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Certifications</a>
-           
-           <a href="languages.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Languages</a>
-           
-           <a href="hobbies.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Hobbies</a>
-           
-           <a href="declaration.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Declaration</a>
-       
-       </aside>
-       
-       <script>
-           function toggleSidebar() {
-               let sidebar = document.getElementById('sidebar');
-               if (sidebar.style.top === "-100vh") {
-                   sidebar.style.top = "0";
-               } else {
-                   sidebar.style.top = "-100vh";
-               }
-           }
-       
-           // Hide sidebar when clicking outside
-           document.addEventListener('click', function(event) {
-               let sidebar = document.getElementById('sidebar');
-               let button = document.querySelector('button');
-       
-               if (!sidebar.contains(event.target) && !button.contains(event.target)) {
-                   sidebar.style.top = "-100vh";
-               }
-           });
-       
-           // Add hover effects for links
-           document.querySelectorAll('aside a').forEach(link => {
-               link.addEventListener('mouseover', function() {
-                   this.style.border = "2px solid #40ff00";
-                   this.style.color = "#40ff00";
-                   this.style.boxShadow = "3px 3px 10px rgba(0, 255, 0, 0.5)";
-               });
-               link.addEventListener('mouseout', function() {
-                   this.style.border = "2px solid transparent";
-                   this.style.color = "white";
-                   this.style.boxShadow = "none";
-               });
-           });
-       </script>
-       
-       
-       <!-- Mobile Responsiveness -->
-       <style>
-           @media screen and (max-width: 768px) {
-               aside {
-                   width: 100px;
-                   padding: 10px;
-                   border-right: 2px solid #26ff00;
-                   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-               }
-               aside h3 {
-                   font-size: 14px;
-                   margin-top: 100px;
-               }
-               aside a {
-                   font-size: 12px;
-                   margin: 5px 0;
-               }
-           }
-       
-           @media screen and (max-width: 480px) {
-               aside {
-                   width: 80px;
-                   padding: 8px;
-               }
-               aside h3 {
-                   font-size: 12px;
-                   margin-top: 80px;
-               }
-               aside a {
-                   font-size: 10px;
-                   margin: 4px 0;
-               }
-           }
-       </style>
-       
-           <!-- FontAwesome for Icons -->
-  
-           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!-- Header (Static & Responsive) -->
+<header style="position: fixed; top: 0; width: 100%; background: linear-gradient(135deg, #002244, #004488, #0066aa); color: white; padding: 5px 15px; z-index: 1000; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-bottom: 3px solid #44ff00; gap: 5px;">
+
+    <!-- Left Section: Portfolio Title -->
+    <div style="flex: 1; font-size: 15px; font-weight: bold; color: #ffffff; font-family: 'Times New Roman', Times, serif, sans-serif; white-space: nowrap;">
+        ADOKO  <br>
+    <span style="font-size: 12px;">CHRISPUS </span> <br>
+     <span style="font-size: 12px;">Professional </span> <br>
+     <span style="font-size: 12px;"> Portfolio </span>
+ </div>
+    </div>
+
+    <!-- Center Section: Navigation Links -->
+    <nav style="flex: 5; text-align: center; background: rgba(255, 255, 255, 0.1); padding: 8px 0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); backdrop-filter: blur(5px); gap: 10px;">
+        <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 12px;">Home</a>
+        <a href="education.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 12px;">Education</a>
+        <a href="experience.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 12px;">Experience</a>
+        <a href="skills.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 12px;">Skills</a>
+        <a href="projects.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 12px;">Projects</a>
+        <a href="references.html" style="color: white; margin: 0 10px; text-decoration: none; font-size: 12px;">References</a>
+    </nav>
+    
+
+    <!-- Right Section: Profile Image -->
+    <div style="flex: 1; display: flex; justify-content: flex-end; margin-right: 0;">
+        <div style="width: 80px; height: 80px; background: #000000; display: flex; align-items: center; justify-content: center; border: 1px solid white; border-radius: 8px; margin-right: 20px;">
+            <img src="chris.jpg" alt="Adoko Chrispus" style="width: 70px; height: 70px; border-radius: 6px;">
+        </div>
+    </div>
+
+</header>
+
+<!-- Mobile Responsiveness -->
+<style>
+    @media screen and (max-width: 768px) {
+        header {
+            flex-direction: row;
+            align-items: center;
+            padding: 8px;
+        }
+        /* Ensure the Portfolio Title stays visible and resizes */
+        header div:first-child {
+            font-size: 16px;
+            flex: 1;
+            white-space: nowrap;
+            text-align: left;
+        }
+        /* Center Navigation & Adjust Spacing */
+        nav {
+            flex: 2;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 5px 0;
+        }
+        nav a {
+            margin: 5px 6px;
+            font-size: 13px;
+        }
+        /* Adjust Image Size */
+        header div:last-child {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        header div:last-child div {
+            width: 60px;
+            height: 60px;
+        }
+        header div:last-child img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        /* Smaller Font for Portfolio Title */
+        header div:first-child {
+            font-size: 14px;
+        }
+        /* Reduce Navigation Font & Spacing */
+        nav a {
+            font-size: 12px;
+            margin: 3px;
+        }
+        /* Further Reduce Image Size */
+        header div:last-child div {
+            width: 50px;
+            height: 50px;
+        }
+        header div:last-child img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+</style>
+<!-- Toggle Button -->
+<button onclick="toggleSidebar()" style="position: fixed; top: 90px; left:20px; background: linear-gradient(145deg, #262626, #1a1a1a); color: #40ff00; border: 2px solid #40ff00; padding: 10px 15px; cursor: pointer; z-index: 998; border-radius: 5px; font-size: 14px; font-weight: bold; box-shadow: 3px 3px 8px rgba(0, 255, 0, 0.3);">☰ Menu</button>
+
+
+  <!-- Sidebar -->
+<aside id="sidebar" style="position: fixed; left: -10px; top: -100vh; width: 150px; background: linear-gradient(145deg, #000000, #1a1a1a); color: white; height: 100vh; padding: 20px; box-sizing: border-box; border-right: 5px solid #40ff00; box-shadow: 5px 5px 20px rgba(0, 255, 0, 0.3); border-radius: 0 15px 15px 0; transition: all 0.15s ease-in-out; display: flex; flex-direction: column; justify-content: flex-start; z-index: 990; padding-top: 30px;">
+
+    <h3 style="border-bottom: 2px solid #40ff00; padding-bottom: 5px; padding-top: 50px; font-size: 15px; text-transform: uppercase; margin-top: 80px; text-align: center;">Quick Links</h3>
+    
+    <a href="certifications.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Certifications</a>
+    
+    <a href="languages.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Languages</a>
+    
+    <a href="hobbies.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Hobbies</a>
+    
+    <a href="declaration.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Declaration</a>
+
+</aside>
+
+<script>
+    function toggleSidebar() {
+        let sidebar = document.getElementById('sidebar');
+        if (sidebar.style.top === "-100vh") {
+            sidebar.style.top = "0";
+        } else {
+            sidebar.style.top = "-100vh";
+        }
+    }
+
+    // Hide sidebar when clicking outside
+    document.addEventListener('click', function(event) {
+        let sidebar = document.getElementById('sidebar');
+        let button = document.querySelector('button');
+
+        if (!sidebar.contains(event.target) && !button.contains(event.target)) {
+            sidebar.style.top = "-100vh";
+        }
+    });
+
+    // Add hover effects for links
+    document.querySelectorAll('aside a').forEach(link => {
+        link.addEventListener('mouseover', function() {
+            this.style.border = "2px solid #40ff00";
+            this.style.color = "#40ff00";
+            this.style.boxShadow = "3px 3px 10px rgba(0, 255, 0, 0.5)";
+        });
+        link.addEventListener('mouseout', function() {
+            this.style.border = "2px solid transparent";
+            this.style.color = "white";
+            this.style.boxShadow = "none";
+        });
+    });
+</script>
+
+
+<!-- Mobile Responsiveness -->
+<style>
+    @media screen and (max-width: 768px) {
+        aside {
+            width: 100px;
+            padding: 10px;
+            border-right: 2px solid #26ff00;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+        aside h3 {
+            font-size: 14px;
+            margin-top: 100px;
+        }
+        aside a {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        aside {
+            width: 80px;
+            padding: 8px;
+        }
+        aside h3 {
+            font-size: 12px;
+            margin-top: 80px;
+        }
+        aside a {
+            font-size: 10px;
+            margin: 4px 0;
+        }
+    }
+</style>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
 
           <!-- Gallery Section -->
     <section style="margin: auto; padding: 20px; background: linear-gradient(145deg, #121d2b, #1a293a); box-shadow: 5px 5px 15px rgba(0, 200, 255, 0.2); border-radius: 12px; width: 85%; max-width: 1000px; margin-top: 50px; padding-top: 40px; padding-bottom: 50px;">
