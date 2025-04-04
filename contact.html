@@ -306,20 +306,71 @@
 
     <!-- Main Content -->
 <!-- Main Content -->
-<main style="padding: 30px; width: 75%; background: linear-gradient(145deg, #121d2b, #1a293a); color: white; box-shadow: 5px 5px 15px rgba(0, 200, 255, 0.2); border-radius: 12px; width: 75; max-width: 777px; margin: auto; text-align: center; font-family: 'Time', 'Times New Roman', Times, serif; margin-top: 90px">1
+<main style="padding: 30px; width: 75%; background: linear-gradient(145deg, #121d2b, #1a293a); color: white; box-shadow: 5px 5px 15px rgba(0, 200, 255, 0.2); border-radius: 12px; width: 75; max-width: 777px; margin: auto; text-align: center; font-family: 'Time', 'Times New Roman', Times, serif; margin-top: 90px">
 
     <!-- Contact Details Section -->
     <section style="padding: 20px; background: #1a293a; border-radius: 10px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
         <!-- Contact Info Box -->
-        <div style="flex: 1; min-width: 250px; text-align: center;">
-            <i class="fas fa-phone-alt" style="font-size: 30px; color: #00c8ff;"></i>
-            <h2 style="font-size: 20px; margin-top: 10px;">Phone</h2>
-            <div style="display: flex; flex-direction: column;">
-                <p><a href="tel:+256772893300" style="color: #00c8ff; text-decoration: none;">+256 772893300</a></p>
-                <p><a href="tel:+256741813093" style="color: #00c8ff; text-decoration: none;">+256 741813093</a></p>
-            </div>
-        </div>
+<div style="flex: 1; min-width: 250px; text-align: center; padding: 20px; background: linear-gradient(145deg, #182838, #233449); border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); margin-bottom: 20px;">
+    <i class="fas fa-phone-alt" style="font-size: 40px; color: #00c8ff; transition: transform 0.3s ease-in-out;"></i>
+    <h2 style="font-size: 22px; margin-top: 15px; color: #fff; font-weight: bold;">Phone</h2>
+    <div style="display: flex; flex-direction: column; margin-top: 15px; gap: 10px;">
+        <p><a href="tel:+256772893300" style="color: #00c8ff; text-decoration: none; font-size: 18px; transition: color 0.3s ease-in-out;">+256 772893300</a></p>
+        <p><a href="tel:+256741813093" style="color: #00c8ff; text-decoration: none; font-size: 18px; transition: color 0.3s ease-in-out;">+256 741813093</a></p>
+    </div>
+</div>
+
+<!-- Responsive Styles -->
+<style>
+    /* General Styling for the Phone Box */
+    .contact-info-box {
+        padding: 20px;
+        background: linear-gradient(145deg, #182838, #233449);
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3);
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    /* Icon Hover Animation */
+    .fas.fa-phone-alt:hover {
+        transform: scale(1.2);
+    }
+
+    /* Phone Numbers */
+    .contact-info-box a {
+        font-size: 18px;
+        color: #00c8ff;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .contact-info-box a:hover {
+        color: #ff6600;
+    }
+
+    /* Responsiveness for Small Devices */
+    @media screen and (max-width: 480px) {
+        .contact-info-box {
+            padding: 15px;
+        }
+
+        .fas.fa-phone-alt {
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        .contact-info-box a {
+            font-size: 16px;
+        }
+    }
+</style>
+
 
         <div style="flex: 1; min-width: 250px; text-align: center;">
             <i class="fas fa-envelope" style="font-size: 30px; color: #00c8ff;"></i>
