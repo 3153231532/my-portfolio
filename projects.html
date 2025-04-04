@@ -394,63 +394,76 @@ text-align: center; font-family: 'Times New Roman', Times, serif; margin-top: 79
 </main>
 
 <!-- Responsive Adjustments for Small Devices -->
+
+<!-- CSS for Responsiveness -->
 <style>
+    .reference-card {
+        background: linear-gradient(145deg, #182838, #233449);
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3);
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        text-align: left;
+    }
+
+    .reference-card img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .reference-details h3 {
+        color: #00c8ff;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .reference-details p {
+        color: white;
+        font-size: 16px;
+    }
+
+    /* Responsive Styling */
     @media screen and (max-width: 768px) {
-        main {
-            width: 90%; /* Adjust the width for tablets and smaller devices */
-            padding: 20px;
+        .reference-card {
+            flex-direction: column;
+            text-align: center;
         }
 
-        /* Adjust the header size */
-        h2 {
-            font-size: 28px;
+        .reference-card img {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 10px;
         }
 
-        /* Adjust image size */
-        section img {
-            width: 80%; /* Make the images fit better */
-            max-width: 150px;
-        }
-
-        /* Adjust text size and layout */
-        section h3 {
+        .reference-details h3 {
             font-size: 18px;
         }
 
-        section p {
+        .reference-details p {
             font-size: 14px;
         }
     }
 
     @media screen and (max-width: 480px) {
-        main {
-            width: 75px; /* Fit the main content within small screens */
-            padding: 15px;
+        .reference-card img {
+            width: 60px;
+            height: 60px;
         }
 
-        /* Adjust header size for small devices */
-        h2 {
-            font-size: 24px;
-        }
-
-        /* Further adjust image size */
-        section img {
-            width: 70%; /* Smaller image for small screens */
-            max-width: 120px;
-        }
-
-        /* Adjust text size */
-        section h3 {
+        .reference-details h3 {
             font-size: 16px;
         }
 
-        section p {
-            font-size: 12px;
+        .reference-details p {
+            font-size: 13px;
         }
     }
 </style>
-
-
 
  
           <!-- Footer -->
