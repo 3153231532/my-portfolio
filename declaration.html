@@ -55,46 +55,138 @@
     </head>
     
 <body style="font-family: 'Times New Roman', Times, serif, sans-serif; overflow-x: hidden;  /* Prevent horizontal overflow */margin: 0;padding: 0; background-color: #f4f4f4; padding-top: 70px; padding-bottom: 70px;">
-   <!-- Hero Section for Declaration -->
-<section style="width: 100%; padding-top: 70px; height: 100vh; background: linear-gradient(145deg, #121d2b, #1a293a); color: white; display: flex; align-items: center; justify-content: center; text-align: center; padding: 50px; position: relative; overflow: hidden; box-shadow: 0 10px 20px rgba(0, 200, 255, 0.2); box-sizing: border-box; padding-bottom:100px;">
-     
-    <!-- Background Image -->
-    <div style="position: absolute;  left: 0; width: 100%; height: 100%; display: flex; overflow: hidden; padding-top: -10px">
-        <img src="dclaration_bg.jpg" alt="Professional Background" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2;">
-    </div>
+  <!-- Declaration Hero Section -->
+<section style="position: relative; width: 100%; min-height: 100vh; background: url('dclaration_bg.jpg') center/cover no-repeat; overflow: hidden;">
 
+    <!-- Transparent Black Overlay covering whole section -->
+    <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+  
     <!-- Hero Content -->
-    <div style="max-width: 700px; z-index: 2; text-align: center;">
-        
-        <!-- Profile Image -->
-        <img src="chris 2.jpg" alt="Adoko Chrispus" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #00c8ff; margin-bottom: 20px; margin-top: 80px;">
+    <div style="position: relative; max-width: 700px; margin: 0 auto; padding: 50px 20px 100px; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; z-index: 2; box-sizing: border-box;">
+  
+      <!-- Profile Image -->
+<div class="profile-image" style="display: flex; justify-content: center; margin-bottom: 15px;">
+    <img 
+      src="chris.jpg" 
+      alt="Adoko Chrispus" 
+      style="
+        width: 300px;          /* fixed size for clarity */
+        max-width: 40vw;       /* max width scales with viewport */
+        min-width: 80px;       /* prevents getting too small */
+        height: auto;          /* keeps aspect ratio */
+        border-radius: 8px;    /* smooth corners */
+        box-shadow: 0 4px 10px rgba(0, 200, 255, 0.3); /* subtle professional shadow */
+        object-fit: cover;     /* ensure good cropping */
+        background: none !important;
+        opacity: 1 !important;
+        filter: none !important;
+        transition: transform 0.3s ease; /* smooth scale on hover */
+      "
+      onmouseover="this.style.transform='scale(1.05)';"
+      onmouseout="this.style.transform='scale(1)';"
+    >
+  </div>
+  
 
-        <h1 style="font-size: 42px; font-weight: bold; color: #00c8ff; text-transform: uppercase; margin-bottom: 10px;">
-            Declaration Statement
-        </h1>
-
-        <p style="font-size: 20px; color: #d0e3f0; margin-bottom: 25px; line-height: 1.6;">
-            I, <b>Adoko Chrispus</b>, hereby affirm that the information provided in this portfolio is true and accurate to the best of my knowledge and belief.
-        </p>
-
-        <!-- Signature Section -->
-        <div style="margin-top: 30px;">
-            <img src="chris signature.png" alt="Signature" style="width: 200px; height: auto; margin-bottom: 10px;">
-            <p style="font-size: 18px; color: #00c8ff; font-weight: bold;">Adoko Chrispus</p>
-        </div>
-
-        <!-- Action Buttons -->
-        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px; top: 20px">
-            <a href="contact.html" style="background: #00c8ff; color: #121d2b; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 8px; box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); transition: 0.3s;">
-                <i class="fas fa-envelope"></i> Contact Me
-            </a>
-            <a href="index.html" style="background: transparent; color: #00c8ff; border: 2px solid #00c8ff; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 8px; transition: 0.3s;">
-                <i class="fas fa-briefcase"></i> View My Portfolio
-            </a>
-        </div>
+      <!-- Heading -->
+      <h1 style="font-size: 42px; font-weight: bold; color: #00c8ff; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 2px;">
+        Declaration Statement
+      </h1>
+  
+      <!-- Declaration Text -->
+      <p style="font-size: 20px; color: #d0e3f0; line-height: 1.6; max-width: 600px; margin-bottom: 30px;">
+        I, <b>Adoko Chrispus</b>, hereby affirm that the information provided in this portfolio is true and accurate to the best of my knowledge and belief.
+      </p>
+  
+      <!-- Signature Section -->
+      <div style="margin-bottom: 40px; text-align: center;">
+        <img src="chris signature.png" alt="Signature" style="width: 200px; height: auto; margin-bottom: 10px;">
+        <p style="font-size: 18px; color: #00c8ff; font-weight: bold; margin: 0;">Adoko Chrispus</p>
+      </div>
+  
+      <!-- Action Buttons -->
+      <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+        <a href="contact.html" style="background: #00c8ff; color: #121d2b; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 8px; box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); transition: 0.3s; display: inline-flex; align-items: center; gap: 8px;">
+          <i class="fas fa-envelope"></i> Contact Me
+        </a>
+        <a href="index.html" style="background: transparent; color: #00c8ff; border: 2px solid #00c8ff; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 8px; transition: 0.3s; display: inline-flex; align-items: center; gap: 8px;">
+          <i class="fas fa-briefcase"></i> View My Portfolio
+        </a>
+      </div>
+  
     </div>
-    
-</section>
+  
+    <!-- Responsive Styles -->
+    <style>
+      @media (max-width: 768px) {
+        section {
+          min-height: 80vh;
+          padding: 40px 10px 80px;
+        }
+  
+        section img[alt="Adoko Chrispus"] {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 15px;
+        }
+  
+        section h1 {
+          font-size: 32px;
+          letter-spacing: 1.5px;
+          margin-bottom: 12px;
+        }
+  
+        section p {
+          font-size: 16px;
+          max-width: 100%;
+          margin-bottom: 25px;
+        }
+  
+        section div[style*="margin-bottom: 40px"] img {
+          width: 160px;
+        }
+  
+        section div[style*="display: flex"] a {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+      }
+  
+      @media (max-width: 480px) {
+        section {
+          min-height: 70vh;
+          padding: 30px 10px 60px;
+        }
+  
+        section img[alt="Adoko Chrispus"] {
+          width: 100px;
+          height: 100px;
+        }
+  
+        section h1 {
+          font-size: 26px;
+          letter-spacing: 1px;
+        }
+  
+        section p {
+          font-size: 14px;
+          line-height: 1.4;
+          margin-bottom: 20px;
+        }
+  
+        section div[style*="margin-bottom: 40px"] img {
+          width: 140px;
+        }
+  
+        section div[style*="display: flex"] a {
+          padding: 8px 15px;
+          font-size: 13px;
+        }
+      }
+    </style>
+  </section>
+  
+  
   
   <!-- Image Slideshow JavaScript -->
   <script>
