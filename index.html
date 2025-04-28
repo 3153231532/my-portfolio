@@ -55,14 +55,15 @@
     </head>
     
 <body style="font-family: 'Times New Roman', Times, serif, sans-serif; overflow-x: hidden;  /* Prevent horizontal overflow */margin: 0;padding: 0; background-color: #f4f4f4; padding-top: 70px; padding-bottom: 70px;">
- <!-- Hero Section -->
+ 
+  <!-- Hero Section -->
 <section style="position: relative; width: 100%; min-height: 60vh; background: url('Main Content.avif') center/cover no-repeat; overflow: hidden;">
 
     <!-- Transparent Black Overlay -->
     <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
   
     <!-- Hero Content -->
-    <div style="position: relative; max-width: 700px; margin: 0 auto; padding: 30px 20px 50px; 
+    <div style="position: relative; width: 100%; max-width: 700px; margin: 0 auto; padding: 30px 20px 50px; 
                 display: flex; flex-direction: column; align-items: center; justify-content: center; 
                 text-align: center; z-index: 2; box-sizing: border-box; min-height: 60vh;">
   
@@ -72,9 +73,8 @@
           src="chris.jpg" 
           alt="Adoko Chrispus" 
           style="
-            width: 280px;          
-            max-width: 40vw;       
-            min-width: 80px;       
+            width: 220px;          
+            max-width: 70%;       
             height: auto;          
             border-radius: 8px;    
             box-shadow: 0 4px 10px rgba(0, 200, 255, 0.3); 
@@ -90,27 +90,69 @@
       </div>
   
       <!-- Centered Content -->
-      <div style="max-width: 600px; z-index: 2;">
-        <h1 style="font-size: 36px; font-weight: 900; color: #00c8ff; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 3px; text-shadow: 0 0 10px #000000;">
+      <div style="width: 100%; max-width: 600px; z-index: 2;">
+        <h1 style="font-size: 32px; font-weight: 900; color: #00c8ff; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 2px; text-shadow: 0 0 10px #000000;">
           Adoko Chrispus
         </h1>
   
-        <p style="font-size: 18px; color: #d0e3f0; margin-bottom: 30px; font-weight: 500; line-height: 1.4; text-shadow: 0 0 8px rgba(0, 200, 255, 0.5);">
+        <p style="font-size: 16px; color: #d0e3f0; margin-bottom: 30px; font-weight: 500; line-height: 1.4; text-shadow: 0 0 8px rgba(0, 200, 255, 0.5); padding: 0 10px;">
           Innovative ICT Specialist | Web Developer | Cybersecurity Enthusiast
         </p>
   
         <!-- Call to Action Buttons -->
-        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: nowrap; white-space: nowrap;">
-          <a href="ADOKO CHRISPUS CV WORD 100.pdf" download style="background: #00c8ff; color: #121d2b; padding: 14px 30px; text-decoration: none; font-weight: 700; border-radius: 8px; box-shadow: 0 6px 15px rgba(0, 200, 255, 0.5); transition: background 0.3s ease, box-shadow 0.3s ease; display: inline-flex; align-items: center; gap: 10px;">
-            <i class="fas fa-download" style="font-size: 18px;"></i> Download Resume
+        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: nowrap; overflow-x: auto;">
+          <a href="ADOKO CHRISPUS CV WORD 100.pdf" download style="flex-shrink: 0; background: #00c8ff; color: #121d2b; padding: 12px 24px; text-decoration: none; font-weight: 700; border-radius: 8px; box-shadow: 0 6px 15px rgba(0, 200, 255, 0.5); transition: background 0.3s ease, box-shadow 0.3s ease; display: inline-flex; align-items: center; gap: 8px; font-size: 14px;">
+            <i class="fas fa-download" style="font-size: 16px;"></i> Download Resume
           </a>
-          <a href="contact.html" style="background: transparent; color: #00c8ff; border: 2px solid #00c8ff; padding: 14px 30px; text-decoration: none; font-weight: 700; border-radius: 8px; transition: background 0.3s ease, color 0.3s ease; display: inline-flex; align-items: center; gap: 10px;">
-            <i class="fas fa-envelope" style="font-size: 18px;"></i> Contact Me
+          <a href="contact.html" style="flex-shrink: 0; background: transparent; color: #00c8ff; border: 2px solid #00c8ff; padding: 12px 24px; text-decoration: none; font-weight: 700; border-radius: 8px; transition: background 0.3s ease, color 0.3s ease; display: inline-flex; align-items: center; gap: 8px; font-size: 14px;">
+            <i class="fas fa-envelope" style="font-size: 16px;"></i> Contact Me
           </a>
         </div>
+  
       </div>
   
     </div>
+  </section>
+  
+  
+    <style>
+      /* Mobile responsiveness */
+      @media (max-width: 600px) {
+        section {
+          min-height: 70vh !important; /* slightly taller for better fit on small devices */
+        }
+        .profile-image img {
+          width: 60vw !important;  /* scale image nicely on small devices */
+          min-width: auto !important;
+        }
+        h1 {
+          font-size: 28px !important;
+          letter-spacing: 2px !important;
+        }
+        p {
+          font-size: 16px !important;
+          margin-bottom: 20px !important;
+        }
+        .cta-buttons {
+          flex-wrap: wrap !important;
+          gap: 15px !important;
+          white-space: normal !important;
+          justify-content: center !important;
+        }
+        .cta-buttons a {
+          padding: 12px 20px !important;
+          font-size: 16px !important;
+          width: 100% !important;
+          max-width: 300px;
+          justify-content: center !important;
+        }
+        /* Reduce padding in the hero content container */
+        div[style*="position: relative; max-width: 700px;"] {
+          padding: 20px 15px 30px !important;
+          min-height: 70vh !important;
+        }
+      }
+    </style>
   </section>
   
   
