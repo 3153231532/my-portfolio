@@ -271,46 +271,92 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 
-
-
 <!-- Main Content -->
-<main style=" padding: 20px; background: linear-gradient(145deg, #121d2b, #1a293a); color: white; box-shadow: 5px 5px 15px rgba(0, 200, 255, 0.2); border-radius: 12px; width: 75%; max-width: 999px; margin: auto; padding: 40px; margin-top: 50px; padding-bottom: 50px; text-align: center; font-family: 'Time', 'Times New Roman', Times, serif;">
+<main style="background: linear-gradient(145deg, #121d2b, #1a293a); color: white; 
+             box-shadow: 5px 5px 15px rgba(0, 200, 255, 0.2); border-radius: 12px; 
+             width: 75%; max-width: 999px; margin: 50px auto; padding: 40px 50px; 
+             font-family: 'Times New Roman', Times, serif;">
 
-    <!-- Personal Information -->
-    <section style="padding: 25px; background: linear-gradient(145deg, #182838, #233449); border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); text-align: left;">
-        <h2 id="personal-info" style="color: #00c8ff; font-size: 24px; border-bottom: 2px solid #00c8ff; padding-bottom: 8px; text-align: center;">
-            <i class="fas fa-user"></i> Personal Information
-        </h2>
-        
-        <p><i class="fas fa-user-circle" style="color: #00c8ff;"></i> <strong style="color: #00c8ff;"> Name:</strong> Adoko Chrispus</p>
-        <p><i class="fas fa-calendar-alt" style="color: #00c8ff;"></i> <strong style="color: #00c8ff;"> Date of Birth:</strong> 28th June, 2002</p>
-        <p><i class="fas fa-mars" style="color: #00c8ff;"></i> <strong style="color: #00c8ff;"> Gender:</strong> Male</p>
-        <p><i class="fas fa-flag" style="color: #00c8ff;"></i> <strong style="color: #00c8ff;"> Nationality:</strong> Ugandan</p>
-        <p><i class="fas fa-map-marker-alt" style="color: #00c8ff;"></i> <strong style="color: #00c8ff;"> Location:</strong> Banda, Kampala, Uganda</p>
-        <p><i class="fas fa-phone-alt" style="color: #00c8ff;"></i> <strong style="color: #00c8ff;"> Phone:</strong> +256 772 893 300 / +256 741 813 093</p>
-        <p><i class="fas fa-envelope" style="color: #00c8ff;"></i> <strong style="color: #00c8ff;"> Email:</strong> 
-            <a href="mailto:chriserathampson@gmail.com" style="color: #00c8ff; text-decoration: none;">chriserathampson@gmail.com</a>
+    <!-- Header -->
+    <header style="text-align: center; margin-bottom: 40px;">
+        <h1 style="color: #00c8ff; font-size: 32px; margin-bottom: 10px;">
+            <i class="fas fa-id-card-alt"></i> About <span style="color: #ff6600;">Adoko Chrispus</span>
+        </h1>
+        <p style="color: #a1cbe6; font-size: 18px; font-style: italic;">
+            IT Professional | <span style="color: #ff6600;">Technical Support</span> | Networking | Cybersecurity
         </p>
-        <p><i class="fab fa-linkedin" style="color: #00c8ff;"></i> <strong style="color: #00c8ff;"> LinkedIn:</strong> 
-            <a href="https://linkedin.com/in/adoko-chrispus-571672302" target="_blank" style="color: #00c8ff; text-decoration: none;">linkedin.com/in/adoko-chrispus</a>
-        </p>
-    </section>
+    </header>
 
-    <!-- Personal Statement -->
-    <section style="margin-top: 30px; padding: 25px; background: linear-gradient(145deg, #182838, #233449); border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); text-align: left;">
-        <h2 id="personal-statement" style="color: #00c8ff; font-size: 24px; border-bottom: 2px solid #00c8ff; padding-bottom: 8px; text-align: center;">
-            <i class="fas fa-briefcase"></i> Personal Statement
-        </h2>
-        <p style="line-height: 1.6; color: #d0e3f0;">
-            Motivated and detail-oriented <strong style="color: #00c8ff;">IT professional</strong> with experience in 
-            <strong style="color: #00c8ff;">technical support, networking, web development, systems administration, and cybersecurity</strong>. 
-            Proficient in troubleshooting hardware and software issues, managing IT infrastructures, and optimizing networks for improved efficiency. 
-            Strong problem-solving skills with hands-on experience in 
-            <strong style="color: #00c8ff;">Linux administration, networking, and database management</strong>.
-        </p>
-    </section>
+    <!-- Two Column Layout -->
+    <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+
+        <!-- Left Column: Personal Information -->
+        <section style="flex: 1 1 350px; background: linear-gradient(145deg, #182838, #233449); 
+                        border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); 
+                        padding: 30px; color: white;">
+            <h2 style="color: #00c8ff; font-size: 26px; border-bottom: 2px solid #00c8ff; 
+                       padding-bottom: 10px; margin-bottom: 25px; text-align: center;">
+                <i class="fas fa-user"></i> Personal Information
+            </h2>
+            <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.7;">
+                <li><i class="fas fa-user-circle" style="color: #00c8ff; width: 20px;"></i> <strong>Name:</strong> <span style="color: #ff6600;">Adoko Chrispus</span></li>
+                <li><i class="fas fa-calendar-alt" style="color: #00c8ff; width: 20px;"></i> <strong>Date of Birth:</strong> 28th June, 2002</li>
+                <li><i class="fas fa-mars" style="color: #00c8ff; width: 20px;"></i> <strong>Gender:</strong> Male</li>
+                <li><i class="fas fa-flag" style="color: #00c8ff; width: 20px;"></i> <strong>Nationality:</strong> Ugandan</li>
+                <li><i class="fas fa-map-marker-alt" style="color: #00c8ff; width: 20px;"></i> <strong>Location:</strong> Banda, Kampala, Uganda</li>
+                <li><i class="fas fa-phone-alt" style="color: #00c8ff; width: 20px;"></i> <strong>Phone:</strong> <span style="color: #ff6600;">+256 772 893 300</span> / +256 741 813 093</li>
+                <li>
+                    <i class="fas fa-envelope" style="color: #00c8ff; width: 20px;"></i> <strong>Email:</strong> 
+                    <a href="mailto:chriserathampson@gmail.com" style="color: #00c8ff; text-decoration: none;">
+                        chriserathampson@gmail.com
+                    </a>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin" style="color: #00c8ff; width: 20px;"></i> <strong>LinkedIn:</strong> 
+                    <a href="https://linkedin.com/in/adoko-chrispus-571672302" target="_blank" style="color: #00c8ff; text-decoration: none;">
+                        linkedin.com/in/adoko-chrispus
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Right Column: Personal Statement -->
+        <section style="flex: 2 1 500px; background: linear-gradient(145deg, #182838, #233449); 
+                        border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); 
+                        padding: 30px; color: white; display: flex; flex-direction: column; justify-content: center;">
+            <h2 style="color: #00c8ff; font-size: 26px; border-bottom: 2px solid #00c8ff; 
+                       padding-bottom: 10px; margin-bottom: 25px; text-align: center;">
+                <i class="fas fa-briefcase"></i> Personal Statement
+            </h2>
+            <p style="font-size: 18px; line-height: 1.8; color: #d0e3f0;">
+                I am a driven and detail-oriented <strong style="color: #00c8ff;">IT professional</strong> with proven expertise in 
+                <strong style="color: #00c8ff;">technical support, networking, web development, systems administration</strong>, and 
+                <span style="color: #ff6600;">cybersecurity</span>. Skilled in diagnosing and resolving complex hardware and software challenges, managing IT infrastructures, and enhancing network performance for operational excellence. 
+                I bring strong analytical and problem-solving capabilities, backed by hands-on experience in 
+                <strong style="color: #00c8ff;">Linux administration, networking</strong>, and <span style="color: #ff6600;">database management</span>. 
+                I am committed to continuous learning and delivering innovative solutions that drive business success.
+            </p>
+        </section>
+
+    </div>
+
+    <!-- Core Strengths & Soft Skills -->
+<section style="margin-top: 40px; background: linear-gradient(145deg, #182838, #233449); 
+border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); 
+padding: 30px; color: white; text-align: center; font-size: 18px; line-height: 1.6;">
+<h2 style="color: #00c8ff; font-size: 26px; border-bottom: 2px solid #00c8ff; padding-bottom: 10px; margin-bottom: 25px;">
+<i class="fas fa-lightbulb"></i> Core Strengths & Soft Skills
+</h2>
+<p>
+I am a proactive communicator and team player, known for <span style="color: #ff6600; font-weight: 600;">adaptability</span> and a <span style="color: #00c8ff; font-weight: 600;">growth mindset</span>. 
+My passion for technology drives continuous learning, while my <span style="color: #ff6600; font-weight: 600;">critical thinking</span> and <span style="color: #00c8ff; font-weight: 600;">attention to detail</span> ensure efficient and effective solutions. 
+I thrive in dynamic environments and embrace challenges as opportunities to innovate and excel.
+</p>
+</section>
 
 </main>
+
+
 
 <!-- Responsive Design Enhancements (Media Queries) -->
 <style>
