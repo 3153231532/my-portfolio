@@ -232,7 +232,6 @@
     <span style="font-size: 12px; font-weight: normal;">Portfolio</span>
   </div>
 
-  <!-- Center Section: Navigation Links -->
   <nav style="
   flex: 5; 
   text-align: center; 
@@ -244,6 +243,7 @@
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap; /* allow wrapping */
 ">
   <a href="index.html" style="
     color: #00ff99; 
@@ -253,76 +253,57 @@
     transition: color 0.3s, border-bottom 0.3s;
     padding-bottom: 2px;
     border-bottom: 2px solid transparent;
+    white-space: nowrap;
   "
   onmouseover="this.style.color='#22ff44'; this.style.borderBottom='2px solid #22ff44';"
   onmouseout="this.style.color='#00ff99'; this.style.borderBottom='2px solid transparent';"
   >Home</a>
   
-  <a href="education.html" style="
-    color: #00ff99; 
-    text-decoration: none; 
-    font-size: 14px; 
-    font-weight: 600; 
-    transition: color 0.3s, border-bottom 0.3s;
-    padding-bottom: 2px;
-    border-bottom: 2px solid transparent;
-  "
+  <!-- Repeat similar for other links -->
+
+  <a href="education.html" style="color:#00ff99; font-size:14px; font-weight:600; padding-bottom:2px; border-bottom:2px solid transparent; white-space: nowrap;"
   onmouseover="this.style.color='#22ff44'; this.style.borderBottom='2px solid #22ff44';"
   onmouseout="this.style.color='#00ff99'; this.style.borderBottom='2px solid transparent';"
   >Education</a>
   
-  <a href="experience.html" style="
-    color: #00ff99; 
-    text-decoration: none; 
-    font-size: 14px; 
-    font-weight: 600; 
-    transition: color 0.3s, border-bottom 0.3s;
-    padding-bottom: 2px;
-    border-bottom: 2px solid transparent;
-  "
+  <a href="experience.html" style="color:#00ff99; font-size:14px; font-weight:600; padding-bottom:2px; border-bottom:2px solid transparent; white-space: nowrap;"
   onmouseover="this.style.color='#22ff44'; this.style.borderBottom='2px solid #22ff44';"
   onmouseout="this.style.color='#00ff99'; this.style.borderBottom='2px solid transparent';"
   >Experience</a>
   
-  <a href="skills.html" style="
-    color: #00ff99; 
-    text-decoration: none; 
-    font-size: 14px; 
-    font-weight: 600; 
-    transition: color 0.3s, border-bottom 0.3s;
-    padding-bottom: 2px;
-    border-bottom: 2px solid transparent;
-  "
+  <a href="skills.html" style="color:#00ff99; font-size:14px; font-weight:600; padding-bottom:2px; border-bottom:2px solid transparent; white-space: nowrap;"
   onmouseover="this.style.color='#22ff44'; this.style.borderBottom='2px solid #22ff44';"
   onmouseout="this.style.color='#00ff99'; this.style.borderBottom='2px solid transparent';"
   >Skills</a>
   
-  <a href="projects.html" style="
-    color: #00ff99; 
-    text-decoration: none; 
-    font-size: 14px; 
-    font-weight: 600; 
-    transition: color 0.3s, border-bottom 0.3s;
-    padding-bottom: 2px;
-    border-bottom: 2px solid transparent;
-  "
+  <a href="projects.html" style="color:#00ff99; font-size:14px; font-weight:600; padding-bottom:2px; border-bottom:2px solid transparent; white-space: nowrap;"
   onmouseover="this.style.color='#22ff44'; this.style.borderBottom='2px solid #22ff44';"
   onmouseout="this.style.color='#00ff99'; this.style.borderBottom='2px solid transparent';"
   >Projects</a>
   
-  <a href="references.html" style="
-    color: #00ff99; 
-    text-decoration: none; 
-    font-size: 14px; 
-    font-weight: 600; 
-    transition: color 0.3s, border-bottom 0.3s;
-    padding-bottom: 2px;
-    border-bottom: 2px solid transparent;
-  "
+  <a href="references.html" style="color:#00ff99; font-size:14px; font-weight:600; padding-bottom:2px; border-bottom:2px solid transparent; white-space: nowrap;"
   onmouseover="this.style.color='#22ff44'; this.style.borderBottom='2px solid #22ff44';"
   onmouseout="this.style.color='#00ff99'; this.style.borderBottom='2px solid transparent';"
   >References</a>
 </nav>
+
+<style>
+  /* Media query for small screens like Infinix Smart 7 HD (screen width <= 480px approx) */
+  @media screen and (max-width: 480px) {
+    nav {
+      gap: 8px !important;  /* less gap */
+    }
+    nav a {
+      font-size: 11px !important;  /* smaller font */
+      padding: 6px 8px !important; /* less padding for tighter fit */
+      white-space: nowrap; /* prevent breaking inside links */
+      flex-basis: calc(50% - 8px); /* roughly 2 per row, considering gap */
+      text-align: center;
+      box-sizing: border-box;
+    }
+  }
+</style>
+
 
 
   <!-- Right Section: Profile Image -->
