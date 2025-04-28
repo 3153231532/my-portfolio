@@ -55,32 +55,136 @@
     </head>
     
 <body style="font-family: 'Times New Roman', Times, serif, sans-serif; overflow-x: hidden;  /* Prevent horizontal overflow */margin: 0;padding: 0; background-color: #f4f4f4; padding-top: 70px; padding-bottom: 70px;">
-   <!-- Hero Section -->
-<section style="width: 100%; height: 55vh; background: linear-gradient(145deg, #121d2b, #1a293a); color: white; display: flex; align-items: center; justify-content: center; text-align: center; padding: 50px; position: relative; overflow: hidden; box-shadow: 0 10px 20px rgba(0, 200, 255, 0.2); box-sizing: border-box;">
+ <!-- Hero Section -->
+<section style="position: relative; width: 100%; min-height: 60vh; background: url('Main Content.avif') center/cover no-repeat; overflow: hidden;">
 
-    <!-- Background Images (Always Visible) -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-wrap: nowrap;">
-        <img src="chris in the office  ura.jpg" alt="Tech Left Background" style="width: 50%; height: 100%; object-fit: cover; opacity: 0.2;">
-        <img src="chris.jpg" alt="Tech Right Background" style="width: 50%; height: 100%; object-fit: cover; opacity: 0.2;">
-    </div>
-
-    <!-- Centered Content -->
-    <div style="max-width: 600px; z-index: 2;">
-        <h1 style="font-size: 42px; font-weight: bold; color: #00c8ff; text-transform: uppercase; margin-bottom: 10px;">Adoko Chrispus</h1>
-        <p style="font-size: 20px; color: #d0e3f0; margin-bottom: 25px;">Innovative ICT Specialist | Web Developer | Cybersecurity Enthusiast</p>
-        
-        <!-- Call to Action -->
-        <div style="display: flex; justify-content: center; gap: 15px;">
-            <a href="ADOKO CHRISPUS CV WORD 100.pdf" download style="background: #00c8ff; color: #121d2b; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 8px; box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); transition: 0.3s;">
-                <i class="fas fa-download"></i> Download Resume
-            </a>
-            <a href="contact.html" style="background: transparent; color: #00c8ff; border: 2px solid #00c8ff; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 8px; transition: 0.3s;">
-                <i class="fas fa-envelope"></i> Contact Me
-            </a>
+    <!-- Transparent Black Overlay -->
+    <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+  
+    <!-- Hero Content -->
+    <div style="position: relative; max-width: 700px; margin: 0 auto; padding: 30px 20px 50px; 
+                display: flex; flex-direction: column; align-items: center; justify-content: center; 
+                text-align: center; z-index: 2; box-sizing: border-box; min-height: 60vh;">
+  
+      <!-- Profile Image -->
+      <div class="profile-image" style="display: flex; justify-content: center; margin-bottom: 15px;">
+        <img 
+          src="chris.jpg" 
+          alt="Adoko Chrispus" 
+          style="
+            width: 280px;          
+            max-width: 40vw;       
+            min-width: 80px;       
+            height: auto;          
+            border-radius: 8px;    
+            box-shadow: 0 4px 10px rgba(0, 200, 255, 0.3); 
+            object-fit: cover;     
+            background: none !important;
+            opacity: 1 !important;
+            filter: none !important;
+            transition: transform 0.3s ease;
+          "
+          onmouseover="this.style.transform='scale(1.05)';"
+          onmouseout="this.style.transform='scale(1)';"
+        >
+      </div>
+  
+      <!-- Centered Content -->
+      <div style="max-width: 600px; z-index: 2;">
+        <h1 style="font-size: 36px; font-weight: 900; color: #00c8ff; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 3px; text-shadow: 0 0 10px #000000;">
+          Adoko Chrispus
+        </h1>
+  
+        <p style="font-size: 18px; color: #d0e3f0; margin-bottom: 30px; font-weight: 500; line-height: 1.4; text-shadow: 0 0 8px rgba(0, 200, 255, 0.5);">
+          Innovative ICT Specialist | Web Developer | Cybersecurity Enthusiast
+        </p>
+  
+        <!-- Call to Action Buttons -->
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: nowrap; white-space: nowrap;">
+          <a href="ADOKO CHRISPUS CV WORD 100.pdf" download style="background: #00c8ff; color: #121d2b; padding: 14px 30px; text-decoration: none; font-weight: 700; border-radius: 8px; box-shadow: 0 6px 15px rgba(0, 200, 255, 0.5); transition: background 0.3s ease, box-shadow 0.3s ease; display: inline-flex; align-items: center; gap: 10px;">
+            <i class="fas fa-download" style="font-size: 18px;"></i> Download Resume
+          </a>
+          <a href="contact.html" style="background: transparent; color: #00c8ff; border: 2px solid #00c8ff; padding: 14px 30px; text-decoration: none; font-weight: 700; border-radius: 8px; transition: background 0.3s ease, color 0.3s ease; display: inline-flex; align-items: center; gap: 10px;">
+            <i class="fas fa-envelope" style="font-size: 18px;"></i> Contact Me
+          </a>
         </div>
+      </div>
+  
     </div>
-</section>
-
+  </section>
+  
+  
+    <!-- Responsive Styles -->
+    <style>
+      @media (max-width: 768px) {
+        section {
+          min-height: 80vh;
+          padding: 40px 10px 80px;
+        }
+  
+        section img[alt="Adoko Chrispus"] {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 15px;
+        }
+  
+        section h1 {
+          font-size: 32px;
+          letter-spacing: 1.5px;
+          margin-bottom: 12px;
+        }
+  
+        section p {
+          font-size: 16px;
+          max-width: 100%;
+          margin-bottom: 25px;
+        }
+  
+        section div[style*="margin-bottom: 40px"] img {
+          width: 160px;
+        }
+  
+        section div[style*="display: flex"] a {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+      }
+  
+      @media (max-width: 480px) {
+        section {
+          min-height: 70vh;
+          padding: 30px 10px 60px;
+        }
+  
+        section img[alt="Adoko Chrispus"] {
+          width: 100px;
+          height: 100px;
+        }
+  
+        section h1 {
+          font-size: 26px;
+          letter-spacing: 1px;
+        }
+  
+        section p {
+          font-size: 14px;
+          line-height: 1.4;
+          margin-bottom: 20px;
+        }
+  
+        section div[style*="margin-bottom: 40px"] img {
+          width: 140px;
+        }
+  
+        section div[style*="display: flex"] a {
+          padding: 8px 15px;
+          font-size: 13px;
+        }
+      }
+    </style>
+  </section>
+  
+  
     <!-- Header (Static & Responsive) -->
 <header style="position: fixed; top: 0; width: 100%; background: linear-gradient(135deg, #002244, #004488, #0066aa); color: white; padding: 5px 15px; z-index: 1000; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-bottom: 3px solid #44ff00; gap: 5px;">
 
@@ -270,91 +374,148 @@
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-
 <!-- Main Content -->
-<main style="margin-left: 1px; padding: 20px; background: linear-gradient(145deg, #121d2b, #1a293a); color: white; border-radius: 12px; width: 85%; max-width: 1000px; margin: auto; padding-top: 40px; padding-bottom: 50px; text-align: center; font-family: 'Times', 'Times New Roman', Times, serif; margin-top: 50px;">
-      
+<main style="
+  max-width: 1000px; 
+  margin: 50px auto 60px auto; 
+  padding: 40px 20px 50px 20px; 
+  background: linear-gradient(145deg, #121d2b, #1a293a); 
+  color: white; 
+  border-radius: 12px; 
+  font-family: 'Times New Roman', serif; 
+  text-align: center;
+  box-sizing: border-box;
+">
 
-<!-- Header -->
-<header style="text-align: center; margin-bottom: 40px;">
-<h1 style="color: #00c8ff; font-size: 32px; margin-bottom: 10px;">
-<i class="fas fa-id-card-alt"></i> About <span style="color: #ff6600;">Adoko Chrispus</span>
-</h1>
-<p style="color: #a1cbe6; font-size: 18px; font-style: italic;">
-IT Professional | <span style="color: #ff6600;">Technical Support</span> | Networking | Cybersecurity
-</p>
-</header>
+  <!-- Header -->
+  <header style="margin-bottom: 40px;">
+    <h1 style="color: #00c8ff; font-size: 32px; margin-bottom: 10px;">
+      <i class="fas fa-id-card-alt"></i> About <span style="color: #ff6600;">Adoko Chrispus</span>
+    </h1>
+    <p style="color: #a1cbe6; font-size: 18px; font-style: italic;">
+      IT Professional | <span style="color: #ff6600;">Technical Support</span> | Networking | Cybersecurity
+    </p>
+  </header>
 
-<!-- Two Column Layout -->
-<div style="display: flex; gap: 40px; flex-wrap: wrap;">
+  <!-- Two Column Layout -->
+  <div style="
+    display: flex; 
+    gap: 40px; 
+    flex-wrap: wrap; 
+    justify-content: center;
+  ">
 
-<!-- Left Column: Personal Information -->
-<section style="flex: 1 1 350px; background: linear-gradient(145deg, #182838, #233449); 
-           border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); 
-           padding: 30px; color: white;">
-<h2 style="color: #00c8ff; font-size: 26px; border-bottom: 2px solid #00c8ff; 
-          padding-bottom: 10px; margin-bottom: 25px; text-align: center;">
-   <i class="fas fa-user"></i> Personal Information
-</h2>
-<ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.7;">
-   <li><i class="fas fa-user-circle" style="color: #00c8ff; width: 20px;"></i> <strong>Name:</strong> <span style="color: #ff6600;">Adoko Chrispus</span></li>
-   <li><i class="fas fa-calendar-alt" style="color: #00c8ff; width: 20px;"></i> <strong>Date of Birth:</strong> 28th June, 2002</li>
-   <li><i class="fas fa-mars" style="color: #00c8ff; width: 20px;"></i> <strong>Gender:</strong> Male</li>
-   <li><i class="fas fa-flag" style="color: #00c8ff; width: 20px;"></i> <strong>Nationality:</strong> Ugandan</li>
-   <li><i class="fas fa-map-marker-alt" style="color: #00c8ff; width: 20px;"></i> <strong>Location:</strong> Banda, Kampala, Uganda</li>
-   <li><i class="fas fa-phone-alt" style="color: #00c8ff; width: 20px;"></i> <strong>Phone:</strong> <span style="color: #ff6600;">+256 772 893 300</span> / +256 741 813 093</li>
-   <li>
-       <i class="fas fa-envelope" style="color: #00c8ff; width: 20px;"></i> <strong>Email:</strong> 
-       <a href="mailto:chriserathampson@gmail.com" style="color: #00c8ff; text-decoration: none;">
-           chriserathampson@gmail.com
-       </a>
-   </li>
-   <li>
-       <i class="fab fa-linkedin" style="color: #00c8ff; width: 20px;"></i> <strong>LinkedIn:</strong> 
-       <a href="https://linkedin.com/in/adoko-chrispus-571672302" target="_blank" style="color: #00c8ff; text-decoration: none;">
-           linkedin.com/in/adoko-chrispus
-       </a>
-   </li>
-</ul>
-</section>
+    <!-- Left Column: Personal Information -->
+    <section style="
+      flex: 1 1 320px; 
+      background: linear-gradient(145deg, #182838, #233449); 
+      border-radius: 10px; 
+      box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); 
+      padding: 30px; 
+      color: white;
+      min-width: 280px;
+      max-width: 400px;
+      box-sizing: border-box;
+    ">
+      <h2 style="
+        color: #00c8ff; 
+        font-size: 26px; 
+        border-bottom: 2px solid #00c8ff; 
+        padding-bottom: 10px; 
+        margin-bottom: 25px; 
+        text-align: center;
+      ">
+        <i class="fas fa-user"></i> Personal Information
+      </h2>
+      <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.7; text-align: left;">
+        <li><i class="fas fa-user-circle" style="color: #00c8ff; width: 20px;"></i> <strong>Name:</strong> <span style="color: #ff6600;">Adoko Chrispus</span></li>
+        <li><i class="fas fa-calendar-alt" style="color: #00c8ff; width: 20px;"></i> <strong>Date of Birth:</strong> 28th June, 2002</li>
+        <li><i class="fas fa-mars" style="color: #00c8ff; width: 20px;"></i> <strong>Gender:</strong> Male</li>
+        <li><i class="fas fa-flag" style="color: #00c8ff; width: 20px;"></i> <strong>Nationality:</strong> Ugandan</li>
+        <li><i class="fas fa-map-marker-alt" style="color: #00c8ff; width: 20px;"></i> <strong>Location:</strong> Banda, Kampala, Uganda</li>
+        <li><i class="fas fa-phone-alt" style="color: #00c8ff; width: 20px;"></i> <strong>Phone:</strong> <span style="color: #ff6600;">+256 772 893 300</span> / +256 741 813 093</li>
+        <li>
+          <i class="fas fa-envelope" style="color: #00c8ff; width: 20px;"></i> <strong>Email:</strong> 
+          <a href="mailto:chriserathampson@gmail.com" style="color: #00c8ff; text-decoration: none;">
+            chriserathampson@gmail.com
+          </a>
+        </li>
+        <li>
+          <i class="fab fa-linkedin" style="color: #00c8ff; width: 20px;"></i> <strong>LinkedIn:</strong> 
+          <a href="https://linkedin.com/in/adoko-chrispus-571672302" target="_blank" style="color: #00c8ff; text-decoration: none;">
+            linkedin.com/in/adoko-chrispus
+          </a>
+        </li>
+      </ul>
+    </section>
 
-<!-- Right Column: Personal Statement -->
-<section style="flex: 2 1 500px; background: linear-gradient(145deg, #182838, #233449); 
-           border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); 
-           padding: 30px; color: white; display: flex; flex-direction: column; justify-content: center;">
-<h2 style="color: #00c8ff; font-size: 26px; border-bottom: 2px solid #00c8ff; 
-          padding-bottom: 10px; margin-bottom: 25px; text-align: center;">
-   <i class="fas fa-briefcase"></i> Personal Statement
-</h2>
-<p style="font-size: 18px; line-height: 1.8; color: #d0e3f0;">
-   I am a driven and detail-oriented <strong style="color: #00c8ff;">IT professional</strong> with proven expertise in 
-   <strong style="color: #00c8ff;">technical support, networking, web development, systems administration</strong>, and 
-   <span style="color: #ff6600;">cybersecurity</span>. Skilled in diagnosing and resolving complex hardware and software challenges, managing IT infrastructures, and enhancing network performance for operational excellence. 
-   I bring strong analytical and problem-solving capabilities, backed by hands-on experience in 
-   <strong style="color: #00c8ff;">Linux administration, networking</strong>, and <span style="color: #ff6600;">database management</span>. 
-   I am committed to continuous learning and delivering innovative solutions that drive business success.
-</p>
-</section>
+    <!-- Right Column: Personal Statement -->
+    <section style="
+      flex: 2 1 520px; 
+      background: linear-gradient(145deg, #182838, #233449); 
+      border-radius: 10px; 
+      box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); 
+      padding: 30px; 
+      color: white; 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center;
+      min-width: 320px;
+      box-sizing: border-box;
+    ">
+      <h2 style="
+        color: #00c8ff; 
+        font-size: 26px; 
+        border-bottom: 2px solid #00c8ff; 
+        padding-bottom: 10px; 
+        margin-bottom: 25px; 
+        text-align: center;
+      ">
+        <i class="fas fa-briefcase"></i> Personal Statement
+      </h2>
+      <p style="font-size: 18px; line-height: 1.8; color: #d0e3f0; text-align: justify;">
+        I am a driven and detail-oriented <strong style="color: #00c8ff;">IT professional</strong> with proven expertise in 
+        <strong style="color: #00c8ff;">technical support, networking, web development, systems administration</strong>, and 
+        <span style="color: #ff6600;">cybersecurity</span>. Skilled in diagnosing and resolving complex hardware and software challenges, managing IT infrastructures, and enhancing network performance for operational excellence. 
+        I bring strong analytical and problem-solving capabilities, backed by hands-on experience in 
+        <strong style="color: #00c8ff;">Linux administration, networking</strong>, and <span style="color: #ff6600;">database management</span>. 
+        I am committed to continuous learning and delivering innovative solutions that drive business success.
+      </p>
+    </section>
 
-</div>
+  </div>
 
-<!-- Core Strengths & Soft Skills -->
-<section style="margin-top: 40px; background: linear-gradient(145deg, #182838, #233449); 
-border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); 
-padding: 30px; color: white; text-align: center; font-size: 18px; line-height: 1.6;">
-<h2 style="color: #00c8ff; font-size: 26px; border-bottom: 2px solid #00c8ff; padding-bottom: 10px; margin-bottom: 25px;">
-<i class="fas fa-lightbulb"></i> Core Strengths & Soft Skills
-</h2>
-<p>
-I am a proactive communicator and team player, known for <span style="color: #ff6600; font-weight: 600;">adaptability</span> and a <span style="color: #00c8ff; font-weight: 600;">growth mindset</span>. 
-My passion for technology drives continuous learning, while my <span style="color: #ff6600; font-weight: 600;">critical thinking</span> and <span style="color: #00c8ff; font-weight: 600;">attention to detail</span> ensure efficient and effective solutions. 
-I thrive in dynamic environments and embrace challenges as opportunities to innovate and excel.
-</p>
-</section>
+  <!-- Core Strengths & Soft Skills -->
+  <section style="
+    margin-top: 40px; 
+    background: linear-gradient(145deg, #182838, #233449); 
+    border-radius: 10px; 
+    box-shadow: 3px 3px 10px rgba(0, 200, 255, 0.3); 
+    padding: 30px; 
+    color: white; 
+    text-align: center; 
+    font-size: 18px; 
+    line-height: 1.6;
+    box-sizing: border-box;
+  ">
+    <h2 style="
+      color: #00c8ff; 
+      font-size: 26px; 
+      border-bottom: 2px solid #00c8ff; 
+      padding-bottom: 10px; 
+      margin-bottom: 25px;
+    ">
+      <i class="fas fa-lightbulb"></i> Core Strengths & Soft Skills
+    </h2>
+    <p>
+      I am a proactive communicator and team player, known for <span style="color: #ff6600; font-weight: 600;">adaptability</span> and a <span style="color: #00c8ff; font-weight: 600;">growth mindset</span>. 
+      My passion for technology drives continuous learning, while my <span style="color: #ff6600; font-weight: 600;">critical thinking</span> and <span style="color: #00c8ff; font-weight: 600;">attention to detail</span> ensure efficient and effective solutions. 
+      I thrive in dynamic environments and embrace challenges as opportunities to innovate and excel.
+    </p>
+  </section>
 
-
-    
 </main>
+
 
 
 
