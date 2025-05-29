@@ -233,43 +233,76 @@
  </div>
     </div>
 
-   <!-- Center Section: Navigation Links -->
-<nav style="
-flex: 5; 
-text-align: center; 
-background: rgba(255, 255, 255, 0); 
-padding: 8px 0; 
-border-radius: 8px; 
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-backdrop-filter: blur(5px); 
-gap: 10px;
-font-weight: 600;
-text-transform: uppercase;
-font-size: 0.85rem;
-letter-spacing: 0.8px;
-display: flex; 
-flex-wrap:nowrap; 
-justify-content: center; 
-align-items: center;">
+   
+<!-- Center Section: Navigation Links -->
+<nav id="mainNav" style="
+  flex: 5; 
+  text-align: center; 
+  background: rgba(255, 255, 255, 0); 
+  padding: 8px 0; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  backdrop-filter: blur(5px); 
+  gap: 10px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+  display: flex; 
+  flex-wrap: nowrap; 
+  justify-content: center; 
+  align-items: center;">
+  
+  <a href="index.html" style="color: #22ff00; margin: 0 10px; text-decoration: none; font-size: 13px;"
+      onmouseover="this.style.color='#00c8ff'; this.style.borderBottom='2px solid #00c8ff';"
+      onmouseout="this.style.color='#22ff00'; this.style.borderBottom='2px solid transparent';">
+      Home
+  </a>
 
-<a href="index.html" style="color: #22ff00; margin: 0 10px; text-decoration: none; font-size: 13px;"
-    onmouseover="this.style.color='#00c8ff'; this.style.borderBottom='2px solid #00c8ff';"
-    onmouseout="this.style.color='#22ff00'; this.style.borderBottom='2px solid transparent';">
-    Home
-</a>
+  <a href="education.html" style="color: #22ff00; margin: 0 10px; text-decoration: none; font-size: 13px;"
+      onmouseover="this.style.color='#00c8ff'; this.style.borderBottom='2px solid #00c8ff';"
+      onmouseout="this.style.color='#22ff00'; this.style.borderBottom='2px solid transparent';">
+      Education
+  </a>
 
-<a href="education.html" style="color: #22ff00; margin: 0 10px; text-decoration: none; font-size: 13px;"
-    onmouseover="this.style.color='#00c8ff'; this.style.borderBottom='2px solid #00c8ff';"
-    onmouseout="this.style.color='#22ff00'; this.style.borderBottom='2px solid transparent';">
-    Education
-</a>
-
-<a href="projects.html" style="color: #22ff00; margin: 0 10px; text-decoration: none; font-size: 13px;"
-    onmouseover="this.style.color='#00c8ff'; this.style.borderBottom='2px solid #00c8ff';"
-    onmouseout="this.style.color='#22ff00'; this.style.borderBottom='2px solid transparent';">
-    Projects
-</a>
+  <a href="projects.html" style="color: #22ff00; margin: 0 10px; text-decoration: none; font-size: 13px;"
+      onmouseover="this.style.color='#00c8ff'; this.style.borderBottom='2px solid #00c8ff';"
+      onmouseout="this.style.color='#22ff00'; this.style.borderBottom='2px solid transparent';">
+      Projects
+  </a>
 </nav>
+
+<script>
+function adjustNavForSmallScreens() {
+    const nav = document.getElementById("mainNav");
+    const links = nav.getElementsByTagName("a");
+
+    if (window.innerWidth <= 420) {
+        // Smaller font size for nav and links
+        nav.style.fontSize = "12px";
+        nav.style.gap = "2px";
+        nav.style.padding = "3px 0";
+
+        for (let i = 0; i < links.length; i++) {
+            links[i].style.fontSize = "12px";
+            links[i].style.margin = "0 6px";
+        }
+    } else {
+        // Reset styles for larger screens
+        nav.style.fontSize = "0.85rem";
+        nav.style.gap = "10px";
+        nav.style.padding = "8px 0";
+
+        for (let i = 0; i < links.length; i++) {
+            links[i].style.fontSize = "13px";
+            links[i].style.margin = "0 10px";
+        }
+    }
+}
+
+window.onload = adjustNavForSmallScreens;
+window.onresize = adjustNavForSmallScreens;
+</script>
+
 
     
 
