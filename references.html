@@ -221,7 +221,8 @@
           }
       </style>
       
-  <!-- Header (Static & Responsive) -->
+ 
+       <!-- Header (Static & Responsive) -->
 <header style="position: fixed; top: 0; width: 100%; background: linear-gradient(135deg, #000000, #0a0f1b, #0d1b2a); color: #00ff99; padding: 5px 15px; z-index: 1000; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-bottom: 3px solid #44ff00; gap: 5px;">
 
     <!-- Left Section: Portfolio Title -->
@@ -235,16 +236,20 @@
 
    <!-- Center Section: Navigation Links -->
 <nav style="
-flex: 6; 
+flex: 5; 
 text-align: center; 
-background: rgba(255, 255, 255, 0.1); 
+background: rgba(255, 255, 255, 0); 
 padding: 8px 0; 
 border-radius: 8px; 
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 backdrop-filter: blur(5px); 
 gap: 10px;
+font-weight: 600;
+text-transform: uppercase;
+font-size: 0.85rem;
+letter-spacing: 0.8px;
 display: flex; 
-flex-wrap: wrap; 
+flex-wrap:nowrap; 
 justify-content: center; 
 align-items: center;">
 
@@ -260,28 +265,10 @@ align-items: center;">
     Education
 </a>
 
-<a href="experience.html" style="color: #22ff00; margin: 0 10px; text-decoration: none; font-size: 13px;"
-    onmouseover="this.style.color='#00c8ff'; this.style.borderBottom='2px solid #00c8ff';"
-    onmouseout="this.style.color='#22ff00'; this.style.borderBottom='2px solid transparent';">
-    Experience
-</a>
-
-<a href="skills.html" style="color: #22ff00; margin: 0 10px; text-decoration: none; font-size: 13px;"
-    onmouseover="this.style.color='#00c8ff'; this.style.borderBottom='2px solid #00c8ff';"
-    onmouseout="this.style.color='#22ff00'; this.style.borderBottom='2px solid transparent';">
-    Skills
-</a>
-
 <a href="projects.html" style="color: #22ff00; margin: 0 10px; text-decoration: none; font-size: 13px;"
     onmouseover="this.style.color='#00c8ff'; this.style.borderBottom='2px solid #00c8ff';"
     onmouseout="this.style.color='#22ff00'; this.style.borderBottom='2px solid transparent';">
     Projects
-</a>
-
-<a href="references.html" style="color: #22ff00; margin: 0 10px; text-decoration: none; font-size: 13px;"
-    onmouseover="this.style.color='#00c8ff'; this.style.borderBottom='2px solid #00c8ff';"
-    onmouseout="this.style.color='#22ff00'; this.style.borderBottom='2px solid transparent';">
-    References
 </a>
 </nav>
 
@@ -360,23 +347,30 @@ align-items: center;">
         }
     }
 </style>
-
 <!-- Toggle Button -->
 <button onclick="toggleSidebar()" style="position: fixed; top: 90px; left:20px; background: linear-gradient(145deg, #262626, #1a1a1a); color: #40ff00; border: 2px solid #40ff00; padding: 10px 15px; cursor: pointer; z-index: 998; border-radius: 5px; font-size: 14px; font-weight: bold; box-shadow: 3px 3px 8px rgba(0, 255, 0, 0.3);">☰ Menu</button>
 
 
   <!-- Sidebar -->
-<aside id="sidebar" style="position: fixed; left: -10px; top: -100vh; width: 150px; background: linear-gradient(145deg, #000000, #1a1a1a); color: white; height: 100vh; padding: 20px; box-sizing: border-box; border-right: 5px solid #40ff00; box-shadow: 5px 5px 20px rgba(0, 255, 0, 0.3); border-radius: 0 15px 15px 0; transition: all 0.15s ease-in-out; display: flex; flex-direction: column; justify-content: flex-start; z-index: 990; padding-top: 30px;">
+<aside id="sidebar" style="position: fixed; left: -10px; top: -100vh; width: 150px; background: linear-gradient(145deg, #000000, #1a1a1a); color: white; height: 100vh; padding: 20px; box-sizing: border-box; border-right: 5px solid #40ff00; box-shadow: 5px 5px 20px rgba(0, 255, 0, 0.3); border-radius: 0 15px 15px 0; transition: all 0.15s ease-in-out; display: flex; flex-direction: column; justify-content: flex-start; z-index: 990; padding-top: 20px; ">
 
     <h3 style="border-bottom: 2px solid #40ff00; padding-bottom: 5px; padding-top: 50px; font-size: 15px; text-transform: uppercase; margin-top: 80px; text-align: center;">Quick Links</h3>
     
-    <a href="certifications.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 12px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Certifications</a>
+    <a href="certifications.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 13px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent; ">Certifications</a>
     
     <a href="languages.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Languages</a>
     
     <a href="hobbies.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Hobbies</a>
+
+    <a href="references.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">References</a>
+
+    <a href="skills.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Skills</a>
+
+    <a href="experience.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Experience</a>
     
     <a href="declaration.html" style="color: white; background: linear-gradient(145deg, #262626, #1a1a1a); display: block; margin: 10px 0; font-size: 14px; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; transition: all 0.3s ease-in-out; border: 2px solid transparent;">Declaration</a>
+    
+</a>
 
 </aside>
 
