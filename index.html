@@ -255,41 +255,29 @@
           }
       </style>
       
-       <!-- Header (Static & Responsive) -->
-<header style="position: fixed; top: 0; width: 100%; background: linear-gradient(135deg, #000000, #0a0f1b, #0d1b2a); color: #00ff99; padding: 5px 15px; z-index: 1000; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-bottom: 3px solid #44ff00; gap: 5px;">
-
-    <!-- Left Section: Portfolio Title -->
-    <div style="flex: 1; font-size: 15px; font-weight: bold; color: #ffffff; font-family: 'Times New Roman', Times, serif, sans-serif; white-space: nowrap;">
-        ADOKO  <br>
-    <span style="font-size: 12px; color: #ffffff;">CHRISPUS </span> <br>
-     <span style="font-size: 12px;">Professional </span> <br>
-     <span style="font-size: 12px;"> Portfolio </span>
- </div>
-    </div>
-
-<!-- Center Section: Navigation Links -->
-<nav id="mainNav" style="
-  flex: 5;
-  background: rgba(255, 255, 255, 0);
-  padding: 6px 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
+    <header style="
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #000000, #0a0f1b, #0d1b2a);
+  color: #00ff99;
+  padding: 5px 10px;
+  z-index: 1000;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
-  font-weight: 600;
-  font-size: 0.75rem;
-  letter-spacing: 0.6px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid #44ff00;
+  gap: 4px;
   white-space: nowrap;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
+  overflow-x: hidden;
+  height: 80px; /* fixed height to keep consistent */
 ">
-  <!-- Hide scrollbar in Webkit browsers -->
   <style>
+    header::-webkit-scrollbar {
+      display: none;
+    }
+
     #mainNav::-webkit-scrollbar {
       display: none;
     }
@@ -297,39 +285,88 @@
     #mainNav a {
       color: white;
       text-decoration: none;
-      padding: 6px 14px;
+      padding: 4px 10px; /* smaller padding */
       border-radius: 5px;
       background-color: black;
       border: 1px solid white;
       font-weight: bold;
-      font-size: 0.75rem;
+      font-size: 0.65rem; /* smaller font */
       box-shadow: none;
       transition: background-color 0.3s ease, color 0.3s ease;
       text-align: center;
       display: inline-block;
-      margin: 0 6px;
+      margin: 0 4px; /* smaller margin */
+      white-space: nowrap;
     }
 
     #mainNav a:hover {
-      background-color: #0066cc; /* ICT blue theme */
+      background-color: #0066cc;
       color: white;
-      border-color: #00acee; /* Lighter blue border on hover */
+      border-color: #00acee;
     }
   </style>
 
-  <a href="index.html">Home</a>
-  <a href="education.html">Education</a>
-  <a href="projects.html">Projects</a>
-</nav>
+  <!-- Left Section -->
+  <div style="
+    flex: 1;
+    min-width: 100px; /* prevent shrinking too small */
+    font-size: 12px; /* smaller */
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    line-height: 1.1;
+    user-select: none;
+  ">
+    ADOKO<br>
+    <span style="font-size: 9px;">CHRISPUS</span><br>
+    <span style="font-size: 9px;">Professional</span><br>
+    <span style="font-size: 9px;">Portfolio</span>
+  </div>
 
-    <!-- Right Section: Profile Image -->
-    <div style="flex: 1; display: flex; justify-content: flex-end; margin-right: 0;">
-        <div style="width: 80px; height: 80px; background: #000000; display: flex; align-items: center; justify-content: center; border: 1px solid #22ff00;  border-radius: 8px; margin-right: 20px;">
-            <img src="chris in the office  ura-Recovered.jpg" alt="Adoko Chrispus" style="width: 70px; height: 70px; border-radius: 6px;">
-        </div>
+  <!-- Center Nav -->
+  <nav id="mainNav" style="
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 0.65rem;
+    letter-spacing: 0.4px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+  ">
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <!-- Right Section -->
+  <div style="
+    flex: 0 0 80px; /* fixed width */
+    display: flex;
+    justify-content: flex-end;
+    min-width: fit-content;
+  ">
+    <div style="
+      width: 70px;
+      height: 70px;
+      background: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #22ff00;
+      border-radius: 8px;
+      margin-right: 10px;
+      user-select: none;
+    ">
+      <img src="chris in the office  ura-Recovered.jpg" alt="Adoko Chrispus" style="width: 60px; height: 60px; border-radius: 6px;">
     </div>
-
+  </div>
 </header>
+
 
 <!-- Mobile Responsiveness -->
 <style>
